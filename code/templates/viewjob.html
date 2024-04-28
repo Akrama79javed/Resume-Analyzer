@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Job</title>
+    <!-- Import Materialize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <style>
+        /* Internal CSS */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+        }
+        .job-info {
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+        }
+        .job-info h5 {
+            margin-top: 0;
+        }
+        .job-info p {
+            margin-bottom: 5px;
+        }
+        .btn {
+            background-color: #007bff;
+            border: none;
+            border-radius: 20px;
+            color: #fff;
+            padding: 10px 20px;
+            cursor: pointer;
+            display: flex;
+            justify-content: center; /* Align horizontally */
+            align-items: center; /* Align vertically */
+            margin: 20px auto 0; /* Align button to center */
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="job-info">
+            <h5>{{job.job_title}}</h5>
+            <p><strong>Location:</strong> {{job.job_location}}</p>
+            <p><strong>Type:</strong> {{job.job_type}}</p>
+            <p><strong>Description:</strong> {{job.job_description}}</p>
+        </div>
+        <a class="btn waves-effect waves-light" href="#">Apply Now</a>
+    </div>
+
+    <!-- Import Materialize JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
